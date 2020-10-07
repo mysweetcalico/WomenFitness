@@ -1,5 +1,31 @@
 <!doctype html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+</style>
 
 <head>
     <!-- Required meta tags -->
@@ -10,7 +36,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" href="css\faqstyle.css">
-    <title>Bootstrap example</title>
+    <title>FAQ</title>
 </head>
 
 <body>
@@ -25,61 +51,44 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
-        <div class="container"><a href="index.html" class="navbar-brand d-flex align-items-center">
-                <i class="fa fa-snowflake-o fa-lg text-primary mr-2"></i><strong>FemFlex</strong></a>
-            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a href="trainer.html" class="nav-link font-italic"> Trainers
-                        </a></li>
-                    <li class="nav-item active"><a href="nutritionists.html" class="nav-link font-italic">
-                            Nutritionists</a></li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="application.html" class="nav-link font-italic"> Apply to be a
-                            Trainer! </a>
-                    </li>
-
-                    <li class="nav-item active"><a href="#" class="nav-link font-italic"> Login </a></li>
-                    <li class="nav-item active"><a href="Signup.html" class="nav-link font-italic"> Sign Up</a></li>
-                </ul>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">FEMFIT</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-left w3-hide-small">
+                <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="trainer.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TRAINERS</a>
+                <a href="nutritionists.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> NUTRITIONISTS</a>
             </div>
+            <div class="w3-right w3-hide-small">
+
+                <a href="application.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Apply to be a
+                    trainer!</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+                <a href="Signup.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> SIGN UP</a>
+            </div>
+            <!-- Hide left-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TRAINERS</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">NUTRITIONISTS</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">APPLY</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
     </nav>
 
-
-    <!-- Navbar -->
-    <!-- <nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1">
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-
-        <ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item">
-                <a class="nav-link waves-effect waves-light">1
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </li>
-            <li class="nav-item avatar dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0"
-                        alt="avatar image">
-                </a>
-                <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
-                    aria-labelledby="navbarDropdownMenuLink-55">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav> -->
-    <!--/.Navbar -->
 
 
 
@@ -87,7 +96,8 @@
 
 <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
     <div class="container">
-
+        <br>
+        <br>
         <h2>Frequently Asked Questions </h2>
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
