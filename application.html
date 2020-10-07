@@ -1,11 +1,103 @@
 <!doctype html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css\style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+
+    .container {
+        padding-top: 74px;
+    }
+</style>
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- confliction on above line is causing navbar to look-->
+    <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="css\aboutstyle.css">
+    <title>Sign Up</title>
 </head>
+
 <body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="index2.html" class="w3-bar-item w3-button w3-wide">FEMFIT</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-left w3-hide-small">
+                <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="trainer.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TRAINERS</a>
+                <a href="nutritionists.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> NUTRITIONISTS</a>
+            </div>
+            <div class="w3-right w3-hide-small">
+
+                <a href="application.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Apply to be a
+                    trainer!</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+                <a href="Signup.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> SIGN UP</a>
+            </div>
+            <!-- Hide left-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="trainer.html" onclick="w3_close()" class="w3-bar-item w3-button">TRAINERS</a>
+        <a href="nutritionists.html" onclick="w3_close()" class="w3-bar-item w3-button">NUTRITIONISTS</a>
+        <a href="application.html" onclick="w3_close()" class="w3-bar-item w3-button">APPLY</a>
+        <a href="Signup.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
+    </nav>
+
+</body>
+
+<body class="container">
     <div>
         <div>Are you a</div>
         <button>Trainer</button>
@@ -36,7 +128,8 @@
             </div>
             <div>
                 <h3>Specialties</h3>
-                <input type="text" id="scheduleAvailability" placeholder="Enter your specialties (e.g. eating disorder, keto, vega,...">
+                <input type="text" id="scheduleAvailability"
+                    placeholder="Enter your specialties (e.g. eating disorder, keto, vega,...">
             </div>
         </form>
     </div>
@@ -65,7 +158,8 @@
             </div>
             <div>
                 <h3>Specialties</h3>
-                <input type="text" id="scheduleAvailability" placeholder="Enter the type of exerciese you specialize in">
+                <input type="text" id="scheduleAvailability"
+                    placeholder="Enter the type of exerciese you specialize in">
             </div>
             <div>
                 <h3>Type of clients</h3>
@@ -95,4 +189,5 @@
     </div>
 
 </body>
+
 </html>

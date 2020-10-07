@@ -47,9 +47,7 @@ a {
     padding: 20px; 
     margin-bottom: 15px;
 }
-.container {
-    margin-top: 15px;
-}
+
 .profile-trainer {
     display: flex;
     flex-direction:row;

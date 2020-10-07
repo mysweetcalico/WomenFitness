@@ -1,88 +1,121 @@
+<!doctype html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css\style.css">
+<link rel="stylesheet" href="css\trainerstyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+</style>
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hackathon FemFit</title>
-    <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="css\trainerstyle.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .checked {
-            color: #ff8e6c;
-        }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="css\aboutstyle.css">
+    <title>Trainer</title>
 </head>
 
 <body>
-    <div class="nav-bar">
-        <div class="left-side">
-            <div class="left-side">
-                <div class="grid">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="grid">
-                    <a href="about.html">About</a>
-                </div>
-                <div class="grid">
-                    <a href="trainer.html">Trainers</a>
-                </div>
-                <div class="grid">
-                    <a href="">Lifestyle</a>
-                </div>
-                <div class="grid">
-                    <a href="nutritionists.html">Nutritionists</a>
-                </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="index2.html" class="w3-bar-item w3-button w3-wide">FEMFIT</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-left w3-hide-small">
+                <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="trainer.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TRAINERS</a>
+                <a href="nutritionists.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> NUTRITIONISTS</a>
             </div>
-            <div class="right-side">
-                <div class="grid">
-                    <a href="application.html">Apply to be a Trainer!</a>
-                </div>
-                <div id="login" class="grid">
-                    <a href="login.html" data-toggle="modal" data-target="#loginModal">Login</a>
-                </div>
-                <div id="signup" class="grid">
-                    <a href="signin.html">Signup</a>
-                </div>
+            <div class="w3-right w3-hide-small">
+
+                <a href="application.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Apply to be a
+                    trainer!</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+                <a href="Signup.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> SIGN UP</a>
             </div>
+            <!-- Hide left-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
 
-    <div class="modal fade" id="loginModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="form-group">Or</div>
-                        <div class="row">
-                            <div class="col-4"></div>
-                            <div class="col-4"></div>
-                            <div class="col-4"></div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Login</button>
-                </div>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="trainer.html" onclick="w3_close()" class="w3-bar-item w3-button">TRAINERS</a>
+        <!-- this button will take you straight to search questions and search result after questions, ask emma to do if she knows -->
+        <a href="nutritionists.html" onclick="w3_close()" class="w3-bar-item w3-button">NUTRITIONISTS</a>
+        <a href="application.html" onclick="w3_close()" class="w3-bar-item w3-button">APPLY</a>
+        <a href="Signup.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="title">Trainers at FemFit</h1>
+                <p class="box">We want you to feel comfortable and safe in your journey
+                    to getting fit. We also provide a way to find some female specific
+                    fitness training such as pregnancy and post-natal specialists.
+                </p>
+            </div>
+            <div class="col-6">
+                <h1>Types of Certifications</h1>
+                <ul class="box">
+                    <li>Certification Type 1:</li>
+                    <ul>
+                        <li class="tab">Descrpt of Cert 1</li>
+                    </ul>
+                    <li>Certification Type 2:</li>
+                    <ul>
+                        <li class="tab">Descrpt of Cert 2</li>
+                    </ul>
+                </ul>
             </div>
         </div>
     </div>
-
 
     <div class="container">
         <div class="row">
@@ -104,6 +137,7 @@
                 </div>
             </div>
             <div class="col-6">
+                <div class="row"></div>
                 <div class="row">
                     <p>Personal Statement</p>
                     <p class="box">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, commodi ipsum.</p>
@@ -124,14 +158,18 @@
                     </p>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="wrap">
-                    <div class="search">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="wrap">
+                <div class="search">
                     <input type="text" class="searchTerm" placeholder="What are you looking for?">
                     <button type="submit" class="searchButton">
                         <i class="fa fa-search"></i>
                     </button>
-                    </div>
                 </div>
             </div>
         </div>
