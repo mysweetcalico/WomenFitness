@@ -7,9 +7,15 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
 }
+.back-pink {
+background-color: #F8E9EE;
+}
 a {
     text-decoration: none;
     color: inherit;
+}
+#logo {
+    font-family: 'Roboto Slab', serif;
 }
 .titles {
     text-align: center;
@@ -27,6 +33,13 @@ a {
 .buttons:hover {
     background-color: #F8E9EE;
 
+}
+.abt-head {
+    font-size: 50px;
+}
+.abt-titles {
+    font-weight: 300;
+    font-size: 30px;
 }
 .nav-bar {
     background-color: #ffdddd;
@@ -57,21 +70,12 @@ a {
     padding: 5px;
     margin: 5px;
 }
-.box {
-    border-radius: 25px;
-    border: 2px solid #ffdddd;
-    box-shadow: 3px 3px 5px #888888;
-    padding: 20px; 
-    margin-bottom: 15px;
+.descrpt-box {
+    margin: 15px;
+    /*margin-right: 15px;*/
 }
 
-.profile-trainer {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-}
+
 #login {
     background-color: #9de5f1;
 }
