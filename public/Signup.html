@@ -1,47 +1,79 @@
 <!doctype html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css\style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-        height: 100%;
-        line-height: 1.8;
-    }
-
-    .w3-bar .w3-button {
-        padding: 16px;
-    }
-
-    .container {
-        padding-top: 32px;
-    }
-</style>
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
-    <link rel="stylesheet" href="css\aboutstyle.css">
-    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://cdn.discordapp.com/attachments/761777207815176243/763973827570302976/pinkdumbells1.jpg");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+
+        .container {
+            padding-top: 74px;
+        }
+
+        .main {
+            padding-left: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .big-font {
+            font-size: 48px;
+        }
+        .btn {
+            font-size: 24px;
+            width: 30%;
+        }
+        .box {
+            border: 1px solid black;
+        }
+        .application {
+            padding-top: 5%;
+            padding-left: 50%;
+        }
+        .spacing {
+            margin-top: 16px;
+        }
+        input {
+            width: 400px;
+        }
+        .top-padding {
+            padding-top: 10%;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,7 +91,7 @@
 
                 <a href="application.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Apply to be a
                     trainer!</a>
-                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+                <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
                 <a href="Signup.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> SIGN UP</a>
             </div>
             <!-- Hide left-floated links on small screens and replace them with a menu icon -->
@@ -80,27 +112,27 @@
         <a href="trainer.html" onclick="w3_close()" class="w3-bar-item w3-button">TRAINERS</a>
         <a href="nutritionists.html" onclick="w3_close()" class="w3-bar-item w3-button">NUTRITIONISTS</a>
         <a href="application.html" onclick="w3_close()" class="w3-bar-item w3-button">APPLY</a>
+        <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOG IN</a>
         <a href="Signup.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
     </nav>
 
-    <div class="container">
-        <form class="siteSignup">
-            <input type="email" id="email" placeholder="Email">
-            <input type="text" id="fullName" placeholder="Full Name">
-            <input type="text" id="userName" placeholder="Username">
-            <input type="password" id="password" placeholder="Password">
-            <button type="button" id="submitButton">Sign up</button>
-            <p>By signing up, you agree to our Terms, Data Policy, and Cookies Policy</p>
+    <div class="container bgimg-1">
+        <h1 class="main top-padding">SIGN UP</h1>
+        <form class="siteSignup main">
+            <input class="spacing" type="email" id="email" placeholder="Email">
+            <input class="spacing" type="text" id="fullName" placeholder="Full Name">
+            <input class="spacing" type="text" id="userName" placeholder="Username">
+            <input class="spacing" type="password" id="password" placeholder="Password">
+            <button class="btn btn-primary spacing" type="button" id="submitButton">Sign up</button>
+            <p class="spacing" >By signing up, you agree to our Terms, Data Policy, and Cookies Policy</p>
         </form>
+
+        <div class="main">
+            <span>Have an account?</span>
+            <a href="./login.html">Log in</a>
+        </div>
     </div>
 
-    <div>
-        <span>Have an account?</span>
-        <span>Log in</span>
-    </div>
-
-
-    <script></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
