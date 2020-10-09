@@ -9,17 +9,25 @@ function nutritionistAppDisplay() {
 }
 
 function nutritionistAppSubmit() {
-    var firstname = document.getElementById("nutritionistFirsttName").value;
-    var lastname = document.getElementById("nutritionistLastName").value;
-    var email = document.getElementById("nutritionistEmail").value;
-    var phonenumber = document.getElementById("nutritionistPhoneNumber").value;
-    var availablity = document.getElementById("nutritionistAvailability").value;
-    var rate = document.getElementById("nutritionistRate").value;
-    var specialties = document.getElementById("nutritionistSpecialties").value;
-    var statement = document.getElementById("nutritionistStatement").value;
+    var firstname = document.getElementById("nutritionistFirsttName");
+    var lastname = document.getElementById("nutritionistLastName");
+    var email = document.getElementById("nutritionistEmail");
+    var phonenumber = document.getElementById("nutritionistPhoneNumber");
+    var availablity = document.getElementById("nutritionistAvailability");
+    var rate = document.getElementById("nutritionistRate");
+    var specialties = document.getElementById("nutritionistSpecialties");
+    var statement = document.getElementById("nutritionistStatement");
 
     console.log(firstname, lastname, email, phonenumber, availablity, rate, specialties);
 
+    firstname.value = "";
+    lastname.value = "";
+    email.value = "";
+    phonenumber.value = "";
+    availablity.value = "";
+    rate.value = "";
+    specialties.value = "";
+    statement.value = "";
 }
 
 function trainerAppDisplay() {
@@ -30,31 +38,41 @@ function trainerAppDisplay() {
 }
 
 function trainerAppSubmit() {
-    var firstname = document.getElementById("trainerFirsttName").value;
-    var lastname = document.getElementById("trainerLastName").value;
-    var email = document.getElementById("trainerEmail").value;
-    var phonenumber = document.getElementById("trainerPhoneNumber").value;
-    var availablity = document.getElementById("trainerAvailability").value;
-    var rate = document.getElementById("trainerRate").value;
-    var specialties = document.getElementById("trainerSpecialties").value;
+    var firstname = document.getElementById("trainerFirsttName");
+    var lastname = document.getElementById("trainerLastName");
+    var email = document.getElementById("trainerEmail");
+    var phonenumber = document.getElementById("trainerPhoneNumber");
+    var availablity = document.getElementById("trainerAvailability");
+    var rate = document.getElementById("trainerRate");
+    var specialties = document.getElementById("trainerSpecialties");
 
     var clientTypesParent = document.getElementById("clientTypes");
     var clientTypes = clientTypesParent.getElementsByTagName("input");
     var clients = [];
     for (var i = 0; i < clientTypes.length; i++) {
         clients.push(clientTypes[i].value);
+        clientTypes[i].checked = false;
     }
-    console.log(clients);
 
     var trainingMedium = document.getElementById("trainingMedium");
     var trainingMedia = trainingMedium.getElementsByTagName("input");
     var training = [];
     for (var i = 0; i < trainingMedia.length; i++) {
         training.push(trainingMedia[i].value);
+        trainingMedia[i].checked = false;
     }
-    console.log(training);
 
     var trainerStyle = document.getElementById("trainerStyle");
     var statement = document.getElementById("trainerStatement");
+
+    firstname.value = "";
+    lastname.value = "";
+    email.value = "";
+    phonenumber.value = "";
+    availablity.value = "";
+    rate.value = "";
+    specialties.value = "";
+    statement.value = "";
+    trainerStyle.value = "";
 }
 
