@@ -3,6 +3,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
+#logo {
+  font-family: 'Roboto Slab', serif;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -15,7 +18,7 @@ a:hover {
 }
 .types {
   width: 50%;
-  border: 15px solid #ffdddd;
+  border: 10px solid #FFD1DC;
   border-radius: 100%;
   margin: 0px 10;
 }
@@ -34,7 +37,9 @@ a:hover {
 #aboutBG {
   color: #ffdddd;
 }
-
+.caption {
+  font-weight: 300;
+}
 
 .social-link {
   width: 30px;

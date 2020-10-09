@@ -1,49 +1,5 @@
 <!doctype html>
 <html lang="en">
-<meta charset="UTF-8">
-<link rel="icon" href="https://cdn.discordapp.com/attachments/694043374172373025/763873709110722570/FemFitLogo.png">
-<title>FemFit: Application</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css\style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 100;
-    }
-
-    body,
-    html {
-        height: 100%;
-        line-height: 1.8;
-    }
-
-    .w3-bar .w3-button {
-        padding: 16px;
-    }
-
-    .container {
-        padding-top: 74px;
-    }
-
-    .nutritionistApp {
-        display: none;
-    }
-
-    .trainerApp {
-        display: none;
-    }
-</style>
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -54,6 +10,76 @@
     <!-- confliction on above line is causing navbar to look-->
     <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" href="css\aboutstyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://cdn.discordapp.com/attachments/761777207815176243/763988703202508800/avocado.jpg");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+
+        .container {
+            padding-top: 74px;
+        }
+
+        #nutritionistApp {
+            display: none;
+        }
+
+        #trainerApp {
+            display: none;
+        }
+
+        .main {
+            padding: 10% 5% 10% 50%;
+            min-height: 100%;
+        }
+        .big-font {
+            font-size: 48px;
+        }
+        .btn {
+            font-size: 24px;
+            width: 30%;
+        }
+        .box {
+            border: 1px solid black;
+        }
+        .application {
+            padding-top: 5%;
+            padding-left: 50%;
+        }
+        .spacing {
+            margin-top: 16px;
+        }
+
+    </style>
     <title>Sign Up</title>
 </head>
 
@@ -71,7 +97,7 @@
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar w3-white w3-card" id="myNavbar" style="font-weight: 400;">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
             <a href="index.html" class="w3-bar-item w3-button w3-wide">FEMFIT</a>
             <!-- Right-sided navbar links -->
             <div class="w3-left w3-hide-small">
@@ -81,8 +107,7 @@
             </div>
             <div class="w3-right w3-hide-small">
 
-                <a href="application.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Apply to be a
-                    trainer!</a>
+                <a href="application.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Apply</a>
                 <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
                 <a href="Signup.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> SIGN UP</a>
             </div>
@@ -107,73 +132,79 @@
         <a href="Signup.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
     </nav>
 
-</body>
-
-<body class="container">
-    <div>
-        <div>Are you a</div>
-        <button onclick="trainerAppDisplay()">Trainer</button>
-        <button onClick="nutritionistAppDisplay()">Nutritionist</button>
+    <div class="main big-font bgimg-1">
+        <div>APPLICATION</div>
+        <button class="btn btn-outline-success" onclick="nutritionistAppDisplay()">
+            Nutritionist
+        </button>
+        <button class="btn btn-outline-success" onclick="trainerAppDisplay()">
+            Trainer
+        </button>
     </div>
 
-    <div id="nutritionistApp">
+    <div id="nutritionistApp" class="main bgimg-1">
         <form>
-            <div>
+            <div class="spacing">
                 <h3>General information</h3>
-                <input type="Text" id="firstName" placeholder="First Name">
-                <input type="Text" id="lastName" placeholder="LastName">
-                <input type="email" id="email" placeholder="Email">
-                <input type="tel" id="phoneNumber" placeholder="Phone number">
+                <input type="Text" id="nutritionistFirsttName" placeholder="First Name">
+                <input type="Text" id="nutritionistLastName" placeholder="LastName">
+                <input type="email" id="nutritionistEmail" placeholder="Email">
+                <input type="tel" id="nutritionistPhoneNumber" placeholder="Phone number">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Certification</h3>
-                <span>Please upload a proof of your certification</span>
+                <div>Please upload a proof of your certification</div>
                 <input type="file" id="certificationProof">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Schedule Availability</h3>
-                <input type="text" id="scheduleAvailability" placeholder="Enter your availability">
+                <input type="text" id="nutritionistAvailability" placeholder="Enter your availability">
             </div>
-            <div>
-                <h3>Rate</h3>
-                <input type="text" id="scheduleAvailability" placeholder="Enter your price">
+            <div class="spacing">
+                <h3>Rate ($/hour)</h3>
+                <input type="text" id="nutritionistRate" placeholder="Enter your price">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Specialties</h3>
-                <input type="text" id="scheduleAvailability"
-                    placeholder="Enter your specialties (e.g. eating disorder, keto, vega,...">
+                <input type="text" id="nutritionistSpecialties"
+                    placeholder="Enter your specialties (e.g. eating disorder, keto, vega,...)">
+            </div>
+            <div class="spacing">
+                <h3>Personal Statement</h3>
+                <textarea type="text" id="nutritionistStatement" placeholder="Personal Statement"></textarea>
             </div>
         </form>
+        <button class="btn btn-primary spacing" onclick="nutritionistAppSubmit()">Submit</button>
     </div>
 
-    <div class="trainerApp">
+    <div id="trainerApp" class="main bgimg-1">
         <form>
-            <div>
+            <div class="spacing">
                 <h3>General information</h3>
-                <input type="Text" id="firstName" placeholder="First Name">
-                <input type="Text" id="lastName" placeholder="LastName">
-                <input type="email" id="email" placeholder="Email">
-                <input type="tel" id="phoneNumber" placeholder="Phone number">
+                <input type="Text" id="trainerFirsttName" placeholder="First Name">
+                <input type="Text" id="trainerLastName" placeholder="LastName">
+                <input type="email" id="trainerEmail" placeholder="Email">
+                <input type="tel" id="trainerPhoneNumber" placeholder="Phone number">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Certification</h3>
                 <span>Please upload a proof of your certification</span>
                 <input type="file" id="certificationProof">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Schedule Availability</h3>
-                <input type="text" id="scheduleAvailability" placeholder="Enter your availability">
+                <input type="text" id="trainerAvailability" placeholder="Enter your availability">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Rate</h3>
-                <input type="text" id="scheduleAvailability" placeholder="Enter your price">
+                <input type="text" id="trainerRate" placeholder="Enter your price">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Specialties</h3>
-                <input type="text" id="scheduleAvailability"
+                <input type="text" id="trainerSpecialties"
                     placeholder="Enter the type of exerciese you specialize in">
             </div>
-            <div>
+            <div id="clientTypes">
                 <h3>Type of clients</h3>
                 <input type="checkbox" id="beginner" name="beginner" value="Beginner">
                 <label for="beginner">Beginner</label><br>
@@ -182,25 +213,37 @@
                 <input type="checkbox" id="expert" name="expert" value="Expert">
                 <label for="expert">Expert</label><br>
             </div>
-            <div>
+            <div id="trainingMedium">
                 <h3>Training medium</h3>
                 <input type="checkbox" id="virtual" name="virtual" value="Virtual">
                 <label for="virtual">Virtual</label><br>
                 <input type="checkbox" id="inperson" name="inPerson" value="inperson">
                 <label for="inperson">In person</label><br>
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Trainer Style</h3>
                 <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Personal Statement</h3>
-                <input type="text" id="trainerStyle" placeholder="Personal Statement">
+                <textarea type="text" id="trainerStatement" placeholder="Personal Statement"></textarea>
             </div>
         </form>
+        <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
     </div>
 
-    <script type="text/javascript" src="../main.js"></script>
+
+        <script type="text/javascript" src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
 </body>
 
 </html>

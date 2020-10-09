@@ -1,11 +1,116 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 body{
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #F3F3F5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+#logo {
+  font-family: 'Roboto Slab', serif;
+}
+.col-two-third {
+  float:right;
+  width: 65%;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
 }
 ul {
   list-style-type: none;
+}
+.heading{
+  background-color: #F8E9EE;
+}
+.profile-img {
+  margin-top: 20px;
+  border-radius: 100%;
+}
+.name-style {
+  color: #aaaaaa;
+  font-weight: 100;
+  font-size: 50px;
+  text-align: left;
+  margin: 0px;
+  margin-top: 50px;
+  padding: 0px;
+}
+.name-txt{
+  color: #000000;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: left;
+  margin: 0px;
+  margin-left: 10px;
+  padding: 0px;
+}
+.rating {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0px;
+  margin-left: 10px;
+  padding: 0px;
+}
+.rating-num {
+  color: #C791A3;
+  font-size: 24px;
+}
+.reviews {
+  color: #111111;
+  font-size: 15px;
+}
+.buttons {
+  background-color: #ffffff;
+  margin-top: 100px;
+  padding: 25px 50px;
+  border-radius: 25px;
+  border: 1px solid #111111;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: left;
+}
+.buttons:hover {
+  background-color: #F8E9EE;
+}
+.col-stats{
+  width: 30%;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding: 0px;
+  justify-content: space-evenly;
+}
+.stats-txt {
+  padding-left: 10px;
+}
+.row {
+  width: 50%;
+  float: left;
+  margin: 5px 5px;
+  padding-bottom: 20px;
+}
+.cert-buttons {
+  background-color: #ffffff;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #FFD1DC;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: left;
+}
+.cert-buttons:hover {
+  background-color: #C791A3;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 .container {
   margin-top: 100px;

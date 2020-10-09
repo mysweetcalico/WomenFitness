@@ -1,13 +1,21 @@
 <!doctype html>
 <html lang="en">
-<meta charset="UTF-8">
-<link rel="icon" href="https://cdn.discordapp.com/attachments/694043374172373025/763873709110722570/FemFitLogo.png">
-<title>FemFit: FAQ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/694043374172373025/763873709110722570/FemFitLogo.png">
+    <title>FemFit: FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
+</head>
 <style>
     body,
     h1,
@@ -33,19 +41,36 @@
     .w3-bar .w3-button {
         padding: 16px;
     }
-</style>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
-    <link rel="stylesheet" href="/css\faqstyle.css">
-    <title>FAQ</title>
-</head>
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://cdn.discordapp.com/attachments/761777207815176243/763973827570302976/pinkdumbells1.jpg");
+        min-height: 100%;
+    }
+
+    .bgimg-2 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://cdn.discordapp.com/attachments/761777207815176243/763985228556664842/yoga.jpg");
+        min-height: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+
+    img {
+        float: left;
+        width: 200px;
+        height: 350px;
+        object-fit: cover;
+    }
+</style>
 
 <body>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -104,169 +129,248 @@
 
 
 
+
+
+    <header class="bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-right titles" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">
+                WHY IS ACCREDITATION<br>
+                SO IMPORTANT?</span>
+
+            <h5 style="margin-top: 50px;">With so many influencers selling fitness and meal plans online these days,
+            </h5>
+            <h5>it can be confusing to tell which sources are
+                reputable.</h5>
+        </div>
+    </header>
+
+    <header class="bgimg-2 w3-display-container">
+        <div class="w3-display-left titles" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">
+                OUR CERTIFICATION<br>
+                GUARANTEE</span>
+
+            <h5 style="margin-top: 50px;">At FemFit, you never have to worry because 100% of our trainers
+            </h5>
+            <h5>and nutritionists are accredited with professional credentials</h5>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="w3-container" style="padding:128px 16px; background-color: #F3F3F5;" id="work">
+        <h3 class="w3-center abt-head" style="padding-bottom: 40px;">Top 5 NCCA Accredited Personal Training
+            Certifications:</h3>
+        <div class="grid-container">
+            <div class="w3-col l3 m6">
+                <a href="#home">
+                    <img src="/pictures\b1.png" class="types" alt="ACE">
+                </a>
+            </div>
+            <div class="w3-col l3 m6">
+                <a href="#home">
+                    <img src="/pictures\b2.png" class="types" alt="ACE">
+                </a>
+            </div>
+            <div class="w3-col l3 m6">
+                <a href="#home">
+                    <img src="/pictures\b3.png" class="types" alt="ACE">
+                </a>
+            </div>
+            <div class="w3-col l3 m6">
+                <a href="#home">
+                    <img src="/pictures\b4.png" class="types" alt="ACE">
+                </a>
+            </div>
+            <div class="w3-col l3 m6">
+                <a href="#home">
+                    <img src="/pictures\b5.png" class="types" alt="ACE">
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+        <div class="container" id="home" style="padding-top: 100px; padding-bottom: 100px;">
+            <h2 style="padding-bottom: 10px;">Frequently Asked Questions </h2>
+            <br>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-3 mb-3 q-box" role="tab" id="heading0">
+                        <h3 class="panel-title">
+                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapse0" aria-expanded="true" aria-controls="collapse0"
+                                style="padding-left: 10px; padding-top: 5px;">
+                                What are the benefits of using FemFit as a user?
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                        <div class="panel-body px-3 mb-4">
+                            <p>As a user of FemFit, you will benefit from:</p>
+                            <ul>
+                                <li>Easy-to-use search engine to find your certified female professional who can
+                                    accomodate
+                                    to your fitness and nutritional needs</li>
+                                <li>A database of exercise statistics to visualize your fitness journey</li>
+                                <li>A single portal to see all your booked schedules and progress</li>
+                                <li>Amazing support backed by fellow fitness gals, as well as the dev team at FemFit.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading p-3 mb-3 q-box" role="tab" id="heading3">
+                        <h3 class="panel-title">
+                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapse3" aria-expanded="true" aria-controls="collapse3"
+                                style="padding-left: 10px; padding-top: 5px;">
+                                What are the benefits of using FemFit as a trainer?
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                        <div class="panel-body px-3 mb-4">
+                            <p>As a trainer of FemFit, you will benefit from:</p>
+                            <ul>
+                                <li>An online platform that specifically features certified female trainers like you for
+                                    the
+                                    female audience.
+                                </li>
+                                <li>An simple booking and communication process with clients</li>
+                                <li>A single portal to see all your trainees, schedules, and ??</li>
+                                <li>Amazing support backed by fellow fitness gals, as well as the dev team at FemFit.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading p-3 mb-3 q-box" role="tab" id="heading1">
+                        <h3 class="panel-title">
+                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapse1" aria-expanded="true" aria-controls="collapse1"
+                                style="padding-left: 10px; padding-top: 5px;">
+                                Does FemFit cost anything to join or use?
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                        <div class="panel-body px-3 mb-4">
+                            <p>FemFit is a free service for you to use. You only pay for the fitness sessions based on
+                                the
+                                trainer you book. There are no hidden costs and all beneficial assets like the Calendar
+                                and
+                                Progress graphs are free for you to use. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading p-3 mb-3 q-box" role="tab" id="heading2">
+                        <h3 class="panel-title">
+                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapse2" aria-expanded="true" aria-controls="collapse2"
+                                style="padding-left: 10px; padding-top: 5px;">
+                                What types of trainers are available on FemFit?
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                        <div class="panel-body px-3 mb-4">
+                            <p>At FemFit, we aim to help clients find a personal female trainer who empathizes with
+                                their
+                                clients' circumstances. That's why we highlight trainers who have experience with
+                                pregnancy,
+                                puberty, special needs, older age, and more in order for you to be able to do yoga,
+                                pilates,
+                                running, and other styles of fitness in the way you need.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+            title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <div class="w3-row">
+            <div class="w3-col 13 m6">
+                <div class="w3-row">
+                    <a href="about.html" class="w3-bar-item w3-link">ABOUT</a>
+                </div>
+                <br>
+                <div class="w3-row">
+                    <a href="faq.html" class="w3-bar-item w3-link">FAQ</a>
+                </div>
+                <br>
+                <div class="w3-row">
+                    <a href="faq.html" class="w3-bar-item w3-link">CERTIFICATION</a>
+                </div>
+            </div>
+            <div class="w3-col 13 m6">
+                <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the
+                    top</a>
+                <div class="w3-xlarge w3-section">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
 </body>
 
-
-<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
-    <div class="container" id="home">
-        <h2 style="padding-bottom: 10px;">Frequently Asked Questions </h2>
-        <br>
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading p-3 mb-3 q-box" role="tab" id="heading0">
-                    <h3 class="panel-title">
-                        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
-                            href="#collapse0" aria-expanded="true" aria-controls="collapse0"
-                            style="padding-left: 10px; padding-top: 5px;">
-                            What are the benefits of using FemFit as a user?
-                        </a>
-                    </h3>
-                </div>
-                <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
-                    <div class="panel-body px-3 mb-4">
-                        <p>As a user of FemFit, you will benefit from:</p>
-                        <ul>
-                            <li>Easy-to-use search engine to find your certified female professional who can accomodate
-                                to your fitness and nutritional needs</li>
-                            <li>A database of exercise statistics to visualize your fitness journey</li>
-                            <li>A single portal to see all your booked schedules and progress</li>
-                            <li>Amazing support backed by fellow fitness gals, as well as the dev team at FemFit.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading p-3 mb-3 q-box" role="tab" id="heading3">
-                    <h3 class="panel-title">
-                        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
-                            href="#collapse3" aria-expanded="true" aria-controls="collapse3"
-                            style="padding-left: 10px; padding-top: 5px;">
-                            What are the benefits of using FemFit as a trainer?
-                        </a>
-                    </h3>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-                    <div class="panel-body px-3 mb-4">
-                        <p>As a trainer of FemFit, you will benefit from:</p>
-                        <ul>
-                            <li>An online platform that specifically features certified female trainers like you for the
-                                female audience.
-                            </li>
-                            <li>An simple booking and communication process with clients</li>
-                            <li>A single portal to see all your trainees, schedules, and ??</li>
-                            <li>Amazing support backed by fellow fitness gals, as well as the dev team at FemFit.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading p-3 mb-3 q-box" role="tab" id="heading1">
-                    <h3 class="panel-title">
-                        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
-                            href="#collapse1" aria-expanded="true" aria-controls="collapse1"
-                            style="padding-left: 10px; padding-top: 5px;">
-                            Does FemFit cost anything to join or use?
-                        </a>
-                    </h3>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-                    <div class="panel-body px-3 mb-4">
-                        <p>FemFit is a free service for you to use. You only pay for the fitness sessions based on the
-                            trainer you book. There are no hidden costs and all beneficial assets like the Calendar and
-                            Progress graphs are free for you to use. </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading p-3 mb-3 q-box" role="tab" id="heading2">
-                    <h3 class="panel-title">
-                        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
-                            href="#collapse2" aria-expanded="true" aria-controls="collapse2"
-                            style="padding-left: 10px; padding-top: 5px;">
-                            What types of trainers are available on FemFit?
-                        </a>
-                    </h3>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-                    <div class="panel-body px-3 mb-4">
-                        <p>At FemFit, we aim to help clients find a personal female trainer who empathizes with their
-                            clients' circumstances. That's why we highlight trainers who have experience with pregnancy,
-                            puberty, special needs, older age, and more in order for you to be able to do yoga, pilates,
-                            running, and other styles of fitness in the way you need.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-</section>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
-</div>
-
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-    <div class="w3-row">
-        <div class="w3-col 13 m6">
-            <div class="w3-row">
-                <a href="about.html" class="w3-bar-item w3-link">ABOUT</a>
-            </div>
-            <br>
-            <div class="w3-row">
-                <a href="faq.html" class="w3-bar-item w3-link">FAQ</a>
-            </div>
-            <br>
-            <div class="w3-row">
-                <a href="faq.html" class="w3-bar-item w3-link">CERTIFICATION</a>
-            </div>
-        </div>
-        <div class="w3-col 13 m6">
-            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the
-                top</a>
-            <div class="w3-xlarge w3-section">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script>
-    // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-    }
-
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-        if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-        } else {
-            mySidebar.style.display = 'block';
-        }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-        mySidebar.style.display = "none";
-    }
-</script>
+</html>

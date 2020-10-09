@@ -1,8 +1,10 @@
 body {
-    padding: 100px 0px;
     background-color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
+}
+#logo {
+    font-family: 'Roboto Slab', serif;
 }
 h2 {
     font-size: 2.5rem;
@@ -11,7 +13,7 @@ h2 {
 }
 a {
     text-decoration: none;
-    color: inherit;
+    color: #ffffff;
   }
   a:hover {
     text-decoration: none;
