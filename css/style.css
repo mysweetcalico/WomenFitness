@@ -7,9 +7,10 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
 }
-.back-pink {
-    background-color: #F8E9EE;
-    border-radius: 25px;
+.types {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0px 10;
 }
 a {
     text-decoration: none;

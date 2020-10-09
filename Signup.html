@@ -45,17 +45,6 @@
 </head>
 
 <body>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
@@ -83,7 +72,7 @@
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    <nav class="container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
@@ -94,43 +83,35 @@
         <a href="Signup.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
     </nav>
 
+    <div class="container">
+        <form class="siteSignup">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="fullName" placeholder="Full Name">
+            <input type="text" id="userName" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="button" id="submitButton">Sign up</button>
+            <p>By signing up, you agree to our Terms, Data Policy, and Cookies Policy</p>
+        </form>
+    </div>
+
+    <div>
+        <span>Have an account?</span>
+        <span>Log in</span>
+    </div>
+
+
+    <script></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
     <body>
-        <div class="container">
-            <div>
-                <h1>FemFit</h1>
-                <p>Sign up to connect with female trainers and nutritionists</p>
-            </div>
-
-            <div class="thirdPartyLogIn">
-                <button>
-                    <span>Google Icon</span>
-                    <span>Log in with Google</span>
-                </button>
-                <button>
-                    <span>Facebook Icon</span>
-                    <span>Log in with Facebook</span>
-                </button>
-                <button>
-                    <span>Apple Icon</span>
-                    <span>Log in with Apple</span>
-                </button>
-            </div>
-
-            <form class="siteSignup">
-                <input type="email" id="email" placeholder="Email">
-                <input type="text" id="fullName" placeholder="Full Name">
-                <input type="text" id="userName" placeholder="Username">
-                <input type="password" id="password" placeholder="Password">
-                <button type="button" id="submitButton">Sign up</button>
-                <p>By signing up, you agree to our Terms, Data Policy, and Cookies Policy</p>
-            </form>
-        </div>
-
-        <div>
-            <span>Have an account?</span>
-            <span>Log in</span>
-        </div>
-
-    </body>
 
 </html>
