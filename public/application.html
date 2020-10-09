@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,95 +16,74 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 100;
-    }
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+        }
 
-    body,
-    html {
-        height: 100%;
-        line-height: 1.8;
-        font-family: "Roboto", sans-serif;
-    }
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+            font-family: "Roboto", sans-serif;
+        }
 
-    /* Full height image header */
-    .bgimg-1 {
-        background-position: center;
-        background-size: cover;
-        background-image: url("https://cdn.discordapp.com/attachments/761777207815176243/763988703202508800/avocado.jpg");
-        min-height: 100%;
-    }
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://cdn.discordapp.com/attachments/761777207815176243/763988703202508800/avocado.jpg");
+            min-height: 100%;
+        }
 
-    .w3-bar .w3-button {
-        padding: 16px;
-    }
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
 
-    .container {
-        padding-top: 74px;
-    }
+        .container {
+            padding-top: 74px;
+        }
 
-    #nutritionistApp {
-        display: none;
-    }
+        #nutritionistApp {
+            display: none;
+        }
 
-    #trainerApp {
-        display: none;
-    }
+        #trainerApp {
+            display: none;
+        }
 
-    .main {
-        padding-top: 10%;
-        padding-left: 50%;
-        min-height: 100%;
-    }
+        .main {
+            padding: 10% 5% 10% 50%;
+            min-height: 100%;
+        }
+        .big-font {
+            font-size: 48px;
+        }
+        .btn {
+            font-size: 24px;
+            width: 30%;
+        }
+        .box {
+            border: 1px solid black;
+        }
+        .application {
+            padding-top: 5%;
+            padding-left: 50%;
+        }
+        .spacing {
+            margin-top: 16px;
+        }
 
-    .big-font {
-        font-size: 48px;
-    }
-
-    .btn {
-        font-size: 24px;
-        width: 30%;
-    }
-
-    .box {
-        border: 1px solid black;
-    }
-
-    .application {
-        padding-top: 5%;
-        padding-left: 50%;
-    }
-
-    .spacing {
-        margin-top: 16px;
-    }
-
-    input,
-    textarea {
-        width: 70%;
-    }
-</style>
+    </style>
 
 <body>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar" style="font-weight: 400;">
@@ -147,7 +125,7 @@
     </nav>
 
     <div class="main big-font bgimg-1">
-        <div>Application</div>
+        <div>APPLICATION</div>
         <button class="btn btn-outline-success" onclick="nutritionistAppDisplay()">
             Nutritionist
         </button>
@@ -160,14 +138,10 @@
         <form>
             <div class="spacing">
                 <h3>General information</h3>
-                <div class="spacing">
-                    <input type="Text" id="nutritionistFirsttName" placeholder="First Name">
-                    <input type="Text" id="nutritionistLastName" placeholder="LastName">
-                </div>
-                <div class="spacing">
-                    <input type="email" id="nutritionistEmail" placeholder="Email">
-                    <input type="tel" id="nutritionistPhoneNumber" placeholder="Phone number">
-                </div>
+                <input type="Text" id="nutritionistFirsttName" placeholder="First Name">
+                <input type="Text" id="nutritionistLastName" placeholder="LastName">
+                <input type="email" id="nutritionistEmail" placeholder="Email">
+                <input type="tel" id="nutritionistPhoneNumber" placeholder="Phone number">
             </div>
             <div class="spacing">
                 <h3>Certification</h3>
@@ -195,31 +169,32 @@
         <button class="btn btn-primary spacing" onclick="nutritionistAppSubmit()">Submit</button>
     </div>
 
-    <div id="trainerApp">
+    <div id="trainerApp" class="main bgimg-1">
         <form>
-            <div>
+            <div class="spacing">
                 <h3>General information</h3>
                 <input type="Text" id="trainerFirsttName" placeholder="First Name">
                 <input type="Text" id="trainerLastName" placeholder="LastName">
                 <input type="email" id="trainerEmail" placeholder="Email">
                 <input type="tel" id="trainerPhoneNumber" placeholder="Phone number">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Certification</h3>
                 <span>Please upload a proof of your certification</span>
                 <input type="file" id="certificationProof">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Schedule Availability</h3>
                 <input type="text" id="trainerAvailability" placeholder="Enter your availability">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Rate</h3>
                 <input type="text" id="trainerRate" placeholder="Enter your price">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Specialties</h3>
-                <input type="text" id="trainerSpecialties" placeholder="Enter the type of exerciese you specialize in">
+                <input type="text" id="trainerSpecialties"
+                    placeholder="Enter the type of exerciese you specialize in">
             </div>
             <div id="clientTypes">
                 <h3>Type of clients</h3>
@@ -237,236 +212,73 @@
                 <input type="checkbox" id="inperson" name="inPerson" value="inperson">
                 <label for="inperson">In person</label><br>
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Trainer Style</h3>
                 <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
             </div>
-            <div>
+            <div class="spacing">
                 <h3>Personal Statement</h3>
-                <input type="text" id="trainerStatement" placeholder="Personal Statement">
+                <textarea type="text" id="trainerStatement" placeholder="Personal Statement"></textarea>
             </div>
-            <button onclick="TrainerAppSubmit()"></button>
         </form>
         <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
     </div>
+    
+<!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <div class="w3-row">
+            <div class="w3-col 13 m6">
+                <div class="w3-row">
+                    <a href="about.html" class="w3-bar-item w3-link">ABOUT</a>
+                </div>
+                <br>
+                <div class="w3-row">
+                    <a href="faq.html" class="w3-bar-item w3-link">FAQ</a>
+                </div>
+                <br>
+                <div class="w3-row">
+                    <a href="faq.html" class="w3-bar-item w3-link">CERTIFICATION</a>
+                </div>
+            </div>
+            <div class="w3-col 13 m6">
+                <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the
+                    top</a>
+                <div class="w3-xlarge w3-section">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <input type="text" id="trainerSpecialties" placeholder="Enter the type of exerciese you specialize in">
-    </div>
-    <div id="clientTypes">
-        <h3>Type of clients</h3>
-        <input type="checkbox" id="beginner" name="beginner" value="Beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="checkbox" id="expert" name="expert" value="Expert">
-        <label for="expert">Expert</label><br>
-    </div>
-    <div id="trainingMedium">
-        <h3>Training medium</h3>
-        <input type="checkbox" id="virtual" name="virtual" value="Virtual">
-        <label for="virtual">Virtual</label><br>
-        <input type="checkbox" id="inperson" name="inPerson" value="inperson">
-        <label for="inperson">In person</label><br>
-    </div>
-    <div>
-        <h3>Trainer Style</h3>
-        <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
-    </div>
-    <div>
-        <h3>Personal Statement</h3>
-        <input type="text" id="trainerStatement" placeholder="Personal Statement">
-    </div>
-    <button onclick="TrainerAppSubmit()"></button>
-    </form>
-    <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
-    </div>
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
 
-    <input type="text" id="trainerSpecialties" placeholder="Enter the type of exerciese you specialize in">
-    </div>
-    <div id="clientTypes">
-        <h3>Type of clients</h3>
-        <input type="checkbox" id="beginner" name="beginner" value="Beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="checkbox" id="expert" name="expert" value="Expert">
-        <label for="expert">Expert</label><br>
-    </div>
-    <div id="trainingMedium">
-        <h3>Training medium</h3>
-        <input type="checkbox" id="virtual" name="virtual" value="Virtual">
-        <label for="virtual">Virtual</label><br>
-        <input type="checkbox" id="inperson" name="inPerson" value="inperson">
-        <label for="inperson">In person</label><br>
-    </div>
-    <div>
-        <h3>Trainer Style</h3>
-        <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
-    </div>
-    <div>
-        <h3>Personal Statement</h3>
-        <input type="text" id="trainerStatement" placeholder="Personal Statement">
-    </div>
-    <button onclick="TrainerAppSubmit()"></button>
-    </form>
-    <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
-    </div>
 
-    <input type="text" id="trainerSpecialties" placeholder="Enter the type of exerciese you specialize in">
-    </div>
-    <div id="clientTypes">
-        <h3>Type of clients</h3>
-        <input type="checkbox" id="beginner" name="beginner" value="Beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="checkbox" id="expert" name="expert" value="Expert">
-        <label for="expert">Expert</label><br>
-    </div>
-    <div id="trainingMedium">
-        <h3>Training medium</h3>
-        <input type="checkbox" id="virtual" name="virtual" value="Virtual">
-        <label for="virtual">Virtual</label><br>
-        <input type="checkbox" id="inperson" name="inPerson" value="inperson">
-        <label for="inperson">In person</label><br>
-    </div>
-    <div>
-        <h3>Trainer Style</h3>
-        <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
-    </div>
-    <div>
-        <h3>Personal Statement</h3>
-        <input type="text" id="trainerStatement" placeholder="Personal Statement">
-    </div>
-    <button onclick="TrainerAppSubmit()"></button>
-    </form>
-    <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
-    </div>
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
 
-    <input type="text" id="trainerSpecialties" placeholder="Enter the type of exerciese you specialize in">
-    </div>
-    <div id="clientTypes">
-        <h3>Type of clients</h3>
-        <input type="checkbox" id="beginner" name="beginner" value="Beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="checkbox" id="expert" name="expert" value="Expert">
-        <label for="expert">Expert</label><br>
-    </div>
-    <div id="trainingMedium">
-        <h3>Training medium</h3>
-        <input type="checkbox" id="virtual" name="virtual" value="Virtual">
-        <label for="virtual">Virtual</label><br>
-        <input type="checkbox" id="inperson" name="inPerson" value="inperson">
-        <label for="inperson">In person</label><br>
-    </div>
-    <div>
-        <h3>Trainer Style</h3>
-        <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
-    </div>
-    <div>
-        <h3>Personal Statement</h3>
-        <input type="text" id="trainerStatement" placeholder="Personal Statement">
-    </div>
-    <button onclick="TrainerAppSubmit()"></button>
-    </form>
-    <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
-    </div>
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
 
-    <input type="text" id="trainerSpecialties" placeholder="Enter the type of exerciese you specialize in">
-    </div>
-    <div id="clientTypes">
-        <h3>Type of clients</h3>
-        <input type="checkbox" id="beginner" name="beginner" value="Beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="checkbox" id="expert" name="expert" value="Expert">
-        <label for="expert">Expert</label><br>
-    </div>
-    <div id="trainingMedium">
-        <h3>Training medium</h3>
-        <input type="checkbox" id="virtual" name="virtual" value="Virtual">
-        <label for="virtual">Virtual</label><br>
-        <input type="checkbox" id="inperson" name="inPerson" value="inperson">
-        <label for="inperson">In person</label><br>
-    </div>
-    <div>
-        <h3>Trainer Style</h3>
-        <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
-    </div>
-    <div>
-        <h3>Personal Statement</h3>
-        <input type="text" id="trainerStatement" placeholder="Personal Statement">
-    </div>
-    <button onclick="TrainerAppSubmit()"></button>
-    </form>
-    <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
-    </div>
-
-    <input type="text" id="trainerSpecialties" placeholder="Enter the type of exerciese you specialize in">
-    </div>
-    <div id="clientTypes">
-        <h3>Type of clients</h3>
-        <input type="checkbox" id="beginner" name="beginner" value="Beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="checkbox" id="expert" name="expert" value="Expert">
-        <label for="expert">Expert</label><br>
-    </div>
-    <div id="trainingMedium">
-        <h3>Training medium</h3>
-        <input type="checkbox" id="virtual" name="virtual" value="Virtual">
-        <label for="virtual">Virtual</label><br>
-        <input type="checkbox" id="inperson" name="inPerson" value="inperson">
-        <label for="inperson">In person</label><br>
-    </div>
-    <div>
-        <h3>Trainer Style</h3>
-        <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
-    </div>
-    <div>
-        <h3>Personal Statement</h3>
-        <input type="text" id="trainerStatement" placeholder="Personal Statement">
-    </div>
-    <button onclick="TrainerAppSubmit()"></button>
-    </form>
-    <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
-    </div>
-
-    <input type="text" id="trainerSpecialties" placeholder="Enter the type of exerciese you specialize in">
-    </div>
-    <div id="clientTypes">
-        <h3>Type of clients</h3>
-        <input type="checkbox" id="beginner" name="beginner" value="Beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="checkbox" id="expert" name="expert" value="Expert">
-        <label for="expert">Expert</label><br>
-    </div>
-    <div id="trainingMedium">
-        <h3>Training medium</h3>
-        <input type="checkbox" id="virtual" name="virtual" value="Virtual">
-        <label for="virtual">Virtual</label><br>
-        <input type="checkbox" id="inperson" name="inPerson" value="inperson">
-        <label for="inperson">In person</label><br>
-    </div>
-    <div>
-        <h3>Trainer Style</h3>
-        <input type="text" id="trainerStyle" placeholder="Trainer Style (e.g. gentle, drill sergeant, etc.">
-    </div>
-    <div>
-        <h3>Personal Statement</h3>
-        <input type="text" id="trainerStatement" placeholder="Personal Statement">
-    </div>
-    <button onclick="TrainerAppSubmit()"></button>
-    </form>
-    <button class="btn btn-primary spacing" onclick="trainerAppSubmit()">Submit</button>
-    </div>
-
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
 
     <script type="text/javascript" src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
