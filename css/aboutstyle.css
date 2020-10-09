@@ -10,6 +10,15 @@ a {
 a:hover {
   text-decoration: none;
 }
+.abt-head {
+  font-size: 50px;
+}
+.types {
+  width: 50%;
+  border: 15px solid #ffdddd;
+  border-radius: 100%;
+  margin: 0px 10;
+}
 #logo {
     font-family: 'Roboto Slab', serif;
 }

@@ -1,14 +1,28 @@
-
+body {
+    padding: 100px 0px;
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
 h2 {
-    font-family: Arial, Verdana;
-    font-weight: 800;
     font-size: 2.5rem;
     color: #091f2f;
     text-transform: uppercase;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: none;
+    
+  }
+.q-box {
+    border-radius: 20px;
+}
 .accordion-section .panel-default > .panel-heading {
     border: 0;
-    background: #f4f4f4;
+    background: #F8E9EE;
     padding: 0;
 }
 .accordion-section .panel-default .panel-title a {
@@ -34,7 +48,7 @@ h2 {
 
 .container {
     padding-top: 66px;
-    padding-bottom: 66px;
+    padding-bottom: 150px;
 }
 
 .navbar {
